@@ -1,8 +1,9 @@
-package by.alexeyerma.learning.algorithms.view;
+package unit.by.alexeyerma.learining.algorithms.view;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import by.alexeyerma.learning.algorithms.view.ConsoleDiscusser;
 import org.junit.jupiter.api.*;
 
 import java.io.ByteArrayInputStream;

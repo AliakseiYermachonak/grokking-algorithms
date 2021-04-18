@@ -9,6 +9,11 @@
   <packaging>pom</packaging>
   <version>0.1</version>
 
+  <properties>
+    <plugin.compiler.version>3.8.1</plugin.compiler.version>
+    <plugin.tests.version>3.0.0-M5</plugin.tests.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -23,10 +28,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>${plugin.compiler.version}</version>
         <configuration>
           <source>16</source>
           <target>16</target>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${plugin.tests.version}</version>
       </plugin>
     </plugins>
   </build>
